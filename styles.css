@@ -4,26 +4,23 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: cadetblue;
+  background-color: #76c4c6;
 }
 
 .father {
-  width: 130px;
-  height: 130px;
-  padding: 15px;
+  width: 200px;
+  margin-bottom: 200px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  animation: spin_it 1.1s ease-in-out infinite;
+  justify-content: space-around;
+  animation: spin_it 1s ease-in-out infinite;
 }
 
 @keyframes spin_it {
-  from {
-    transform: rotateZ(0);
+  50% {
+    transform: rotate(0.5turn);
   }
-  to {
-    transform: rotateZ(180deg);
+  100% {
+    transform: rotate(0.5turn);
   }
 }
 
@@ -35,9 +32,7 @@ body {
 }
 
 .mother {
-  width: 130px;
-  height: 130px;
-  padding: 15px;
+  width: 150px;
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
@@ -45,37 +40,37 @@ body {
 }
 
 .keyboard {
-  width: 18px;
-  height: 40px;
+  width: 20px;
+  height: 80px;
   background-color: white;
-  animation: mover 0.6s linear infinite alternate;
-}
-
-.keyboard:first-child {
-  animation: mover 0.5s linear 0.8s infinite alternate;
+  animation: mover 1s ease-in-out infinite;
 }
 
 .keyboard:nth-child(2) {
-  animation: mover 0.5s linear 0.9s infinite alternate;
+  animation-delay: 0.1s;
 }
 
 .keyboard:nth-child(3) {
-  animation: mover 0.5s linear 1s infinite alternate;
+  animation-delay: 0.2s;
 }
 
 .keyboard:nth-child(4) {
-  animation: mover 0.5s linear 1.1s infinite alternate;
+  animation-delay: 0.3s;
 }
 
 .keyboard:last-child {
-  animation: mover 0.5s linear 1.2s infinite alternate;
+  animation-delay: 0.4s;
 }
 
 @keyframes mover {
-  from {
-    height: 40px;
+  0% {
+    transform: none;
   }
-  to {
-    height: 100%;
+  25% {
+    transform: scaleY(2);
+  }
+  50%,
+  100% {
+    transform: none;
   }
 }
