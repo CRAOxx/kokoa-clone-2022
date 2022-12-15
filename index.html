@@ -4,34 +4,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>library</title>
+    <link rel="stylesheet" href="styles_3.css" />
   </head>
-  <style></style>
   <body>
-    <h1>Mozilla is cool</h1>
-    <img
-      src="https://mdn.github.io/beginner-html-site/images/firefox-icon.png"
-      alt="firefox_logo"
-    />
-    <p>At Mozilla, we're a global community of</p>
-    <ul>
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
-    <p>
-      working togerther to keep the Internet alive and accessible, so people
-      wordwide can be informed contributors and creators of the Web. We belive
-      this act of human collaboration across an open plaform is essential to
-      individual growth and our collective future.
-    </p>
-    <p>
-      Read the
-      <a href="https://www.mozilla.org/en-US/about/manifesto/"
-        >Mozilla Manifesto</a
-      >
-      to learn even more about the values and principles that guide the pursuit
-      of our mission.
-    </p>
+    <div class="starus-bar">
+      <div class="starus-bar__column">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </div>
+      <div class="starus-bar__column">library</div>
+      <div class="starus-bar__colmn">
+        <i class="fa-solid fa-basket-shopping fa-2x"></i>
+      </div>
+    </div>
+
+    <form class="search-bar">
+      <input
+        class="search-bar__input"
+        placeholder="Search books...."
+        type="search"
+      />
+      <div class="search-bar__icon">
+        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+      </div>
+    </form>
+
+    <article>
+      <section class="main-book">
+        <h2>Book of the day</h2>
+        <div class="main-book__div">
+          <div class="main-image"></div>
+          <div class="main-book__data">
+            <h3>No Fixed Abode</h3>
+            <p>Journey Through</p>
+            <div class="star-bar">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="sub-box__a">
+              <button class="sub-box__btn">Journey</button>
+              <button class="sub-box__btn btn_2">Bio graphy</button>
+            </div>
+            <div class="sub-bax__b">
+              <button class="mark-yellow">
+                <i class="fa-solid fa-bookmark fa-2x"></i>
+              </button>
+              <button class="com-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-book sencond">
+        <h2>Top Adventures</h2>
+        <div class="small">
+          <div class="small-image__box">
+            <div class="small-image__card">
+              <div class="small-image"></div>
+              <div class="bar__2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="small-image__box">
+            <div class="small-image__card">
+              <div class="small-image"></div>
+              <div class="bar__2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="small-image__box">
+            <div class="small-image__card">
+              <div class="small-image"></div>
+              <div class="bar__2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="small-image__box">
+            <div class="small-image__card">
+              <div class="small-image"></div>
+              <div class="bar__2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-book">
+        <h2>Popular authors</h2>
+        <div class="thid-box">
+          <div class="sub-image"></div>
+          <div class="thid-box__data">
+            <h3>George Raymond<br />Richard Martin</h3>
+            <p>
+              Modern American science fiction writer, screenwriter,producer and
+              editor, winner of many literary awards
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+    <script
+      src="https://kit.fontawesome.com/f2b801ea4d.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
