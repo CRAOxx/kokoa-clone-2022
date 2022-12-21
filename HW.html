@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create An Account</title>
+  </head>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+  <body>
+    <h1>Create An Account</h1>
+    <form>
+      <div>
+        <label for="firstname">First Name</label>
+        <input id="firstname" required placeholder="First name" type="text" />
+      </div>
+      <div>
+        <label for="lastname">Last Name</label>
+        <input id="lastname" required placeholder="Last name" type="text" />
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input id="email" required placeholder="E-mail" type="email" />
+      </div>
+      <div>
+        <label for="username">User Name</label>
+        <input id="username" required placeholder="User name" type="text" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input id="password" required placeholder="Password" type="password" />
+      </div>
+      <div>
+        <label for="birth-date">Birth date</label>
+        <input id="birth-date" required placeholder="Birth date" type="date" />
+      </div>
+      <div>
+        <label for="happy-range">How happy are you?</label>
+        <input
+          id="happy-range"
+          required
+          placeholder="happy-range"
+          type="range"
+        />
+      </div>
+      <div>
+        <label for="color">What is your fav. color?</label>
+        <input id="color" required placeholder="Color" type="color" />
+      </div>
+      <div><input type="submit" value="submit" /></div>
+    </form>
+  </body>
+</html>
