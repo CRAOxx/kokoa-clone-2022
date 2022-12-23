@@ -51,6 +51,25 @@ body {
   border-bottom: 2px solid var(--green);
 }
 
-#login-form :nth-of-type(3) {
+.login-form_email:focus {
+  color: #00b900;
+}
+
+.login-form_submit {
+  font-weight: 800;
   border-radius: 5px;
+  background-color: #dee5ec;
+  color: #fff;
+  height: 60px;
+}
+
+.login-content {
+  display: flex;
+  justify-content: space-between;
+  color: #bec8d2;
+  font-size: 16px;
+}
+
+.login-content:nth-of-type(2) {
+  color: #469fd6;
 }
