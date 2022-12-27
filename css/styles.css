@@ -24,7 +24,7 @@ body {
 
 .welcome-header__text {
   color: #949494;
-  width: 83%;
+  width: 51%;
   font-size: 16px;
 }
 
@@ -51,8 +51,10 @@ body {
   border-bottom: 2px solid var(--green);
 }
 
-.login-form_email:focus {
+.login-form_email {
   color: #00b900;
+  display: flex;
+  flex-direction: column;
 }
 
 .login-form_submit {
@@ -63,13 +65,13 @@ body {
   height: 60px;
 }
 
+.login-form_submit:focus {
+  border-bottom: none;
+}
+
 .login-content {
   display: flex;
   justify-content: space-between;
   color: #bec8d2;
   font-size: 16px;
-}
-
-.login-content:nth-of-type(2) {
-  color: #469fd6;
 }

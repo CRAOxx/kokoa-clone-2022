@@ -30,13 +30,14 @@
     </header>
 
     <form id="login-form">
-      <label class="login-form_email">メールアドレス</label>
-      <input type="text" placeholder="メールアドレス" />
+      <label class="login-form_email" for="email"
+        >メールアドレス <input type="text" placeholder="メールアドレス"
+      /></label>
       <input type="password" placeholder="パスワード" />
       <input class="login-form_submit" type="submit" value="ログイン" />
       <div class="login-content">
         <div>
-          <input type="checkbox" id="log-in" name="log-in" />
+          <input class="checkbox" type="checkbox" id="log-in" name="log-in" />
           <label for="log-in"><span>自動ログイン</span></label>
         </div>
         <a href="#">パスワードを再設定</a>
