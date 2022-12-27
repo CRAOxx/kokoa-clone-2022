@@ -30,10 +30,23 @@
     </header>
 
     <form id="login-form">
-      <label class="login-form_email" for="email"
-        >メールアドレス <input type="text" placeholder="メールアドレス"
-      /></label>
-      <input type="password" placeholder="パスワード" />
+      <label class="login-form_label" for="email">メールアドレス</label>
+      <input
+        class="login-form_input"
+        name="username"
+        type="text"
+        placeholder="メールアドレス"
+      />
+
+      <label class="login-form_label" for="password">パスワード</label>
+      <input
+        class="login-form_input"
+        name="password"
+        type="password"
+        required
+        minlength="8"
+        placeholder="パスワード"
+      />
       <input class="login-form_submit" type="submit" value="ログイン" />
       <div class="login-content">
         <div>
