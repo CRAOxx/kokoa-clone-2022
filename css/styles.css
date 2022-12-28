@@ -16,7 +16,8 @@ body {
 
 .login-form_input {
   position: relative;
-  width: 100%;
+  width: 300px;
+  margin-top: 30px;
 }
 
 .login-form_input input {
@@ -27,6 +28,7 @@ body {
   border: none;
   color: #23342a;
   font-size: 1em;
+  border-bottom: 2px solid #dee5ec;
 }
 
 .login-form_span {
@@ -34,22 +36,20 @@ body {
   left: 0;
   top: 0;
   padding: 20px 10px 10px;
-  color: #00b900;
+  color: #dee5ec;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
 }
 
-.login-form_input:focus {
+.login-form_input input:focus {
   border-bottom: 2px solid var(--green);
 }
 
-.login-form_label {
-  color: #dee5ec;
-  font-size: 1em;
-}
-
-.login-form_label:focus {
-  display: inherit;
+.login-form_input input:focus ~ .login-form_span {
   color: #00b900;
-  font-size: 12px;
+  transform: translateY(-34px);
+  font-size: 0.75em;
 }
 
 .login-form_submit {
