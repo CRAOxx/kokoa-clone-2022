@@ -2,30 +2,10 @@
 @import "reset.css";
 @import "variables.css";
 @import "status-bar.css";
+@import "welcome-header.css";
 
 body {
   font-family: "Noto Sans JP", sans-serif, "Segoe UI", Tahoma, Geneva, Verdana;
-}
-
-.welcome-header {
-  margin: 90px 0px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.welcome-header__title {
-  font-size: 24px;
-  font-weight: 700;
-  margin-top: 30px;
-  margin-bottom: 25px;
-}
-
-.welcome-header__text {
-  color: #949494;
-  width: 51%;
-  font-size: 16px;
 }
 
 #login-form {
@@ -34,18 +14,27 @@ body {
   margin: 0 30px;
 }
 
-.login-form_input,
-.login-form_submit {
-  border: none;
-  border-bottom: 2px solid #dee5ec;
-  padding: 15px 0px;
-  font-size: 18px;
-  margin-bottom: 25px;
-  transition: border-bottom 0.3s ease-in-out;
+.login-form_input {
+  position: relative;
+  width: 100%;
 }
 
-#login-form input::placeholder {
-  color: #c8c8c8;
+.login-form_input input {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  padding: 20px 10px 10px;
+  border: none;
+  color: #23342a;
+  font-size: 1em;
+}
+
+.login-form_span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px 10px 10px;
+  color: #00b900;
 }
 
 .login-form_input:focus {
@@ -54,7 +43,7 @@ body {
 
 .login-form_label {
   color: #dee5ec;
-  font-size: 12px;
+  font-size: 1em;
 }
 
 .login-form_label:focus {
@@ -67,12 +56,9 @@ body {
   font-weight: 800;
   border-radius: 5px;
   background-color: #dee5ec;
+  border-bottom: none;
   color: #fff;
   height: 60px;
-}
-
-.login-form_submit:focus {
-  border-bottom: none;
 }
 
 .login-content {
