@@ -30,25 +30,27 @@
     </header>
 
     <form id="login-form">
-      <div class="login-form_input">
-        <input name="username" type="text" />
-        <span class="login-form_span">メールアドレス</span>
-      </div>
-      <div class="login-form_input">
-        <input name="password" type="password" required minlength="8" />
-        <span class="login-form_span">パスワード</span>
-      </div>
+      <input
+        class="login-form_input"
+        name="username"
+        type="text"
+        placeholder="メールアドレス"
+      />
+      <input
+        class="login-form_input"
+        name="password"
+        type="password"
+        required
+        minlength="8"
+        placeholder="パスワード"
+      />
       <input class="login-form_submit" type="submit" value="ログイン" />
       <div class="login-content">
-        <div>
-          <input
-            class="checkbox"
-            type="checkbox"
-            id="log-in"
-            name="auto-log-in"
-          />
-          <label for="log-in"><span>自動ログイン</span></label>
-        </div>
+        <label class="login-content-checkbox">
+          <input type="checkbox" />
+          <span class="login-content-icon"></span>
+          <span class="login-content-text">自動ログイン</span>
+        </label>
         <a href="#">パスワードを再設定</a>
       </div>
     </form>

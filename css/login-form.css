@@ -22,24 +22,18 @@
   border-bottom: 2px solid var(--green);
 }
 
-.login-form_label {
-  color: #dee5ec;
-  font-size: 12px;
-}
-
-.login-form_label:focus {
-  display: inherit;
-  color: #00b900;
-  font-size: 12px;
-}
-
 .login-form_submit {
   font-weight: 800;
   border-radius: 5px;
   background-color: #dee5ec;
-  border-bottom: none;
+  border: none;
   color: #fff;
   height: 60px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-form_submit:hover {
+  background-color: var(--green);
 }
 
 .login-content {
@@ -51,4 +45,77 @@
 
 .login-content a {
   color: inherit;
+}
+
+.login-content-checkbox input {
+  display: none;
+}
+
+.login-content-checkbox span {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.login-content-checkbox .login-content-icon {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #bec8d2;
+  border-radius: 3px;
+  transition: background 0.1s ease;
+}
+
+.login-content-checkbox .login-content-icon::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  width: 5px;
+  height: 11px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg) scale(0);
+  transition: all 0.35 ease;
+  transition-delay: 0.15s;
+  opacity: 0;
+}
+
+.login-content-text {
+  margin-left: 5px;
+}
+
+.login-content-checkbox input:checked ~ .login-content-icon {
+  border-color: transparent;
+  background: var(--green);
+  animation: jelly 0.6s ease;
+}
+
+.login-content-checkbox input:checked ~ .login-content-icon::after {
+  opacity: 1;
+  transform: rotate(45deg) scale(1);
+}
+
+@keyframes jelly {
+  0% {
+    transform: scale(1.1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }

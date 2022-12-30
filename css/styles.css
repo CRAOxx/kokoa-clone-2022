@@ -3,71 +3,8 @@
 @import "variables.css";
 @import "status-bar.css";
 @import "welcome-header.css";
+@import "login-form.css";
 
 body {
   font-family: "Noto Sans JP", sans-serif, "Segoe UI", Tahoma, Geneva, Verdana;
-}
-
-#login-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0 30px;
-}
-
-.login-form_input {
-  position: relative;
-  width: 300px;
-  margin-top: 30px;
-}
-
-.login-form_input input {
-  position: relative;
-  width: 100%;
-  background: transparent;
-  padding: 20px 10px 10px;
-  border: none;
-  color: #23342a;
-  font-size: 1em;
-  border-bottom: 2px solid #dee5ec;
-}
-
-.login-form_span {
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 20px 10px 10px;
-  color: #dee5ec;
-  font-size: 1em;
-  pointer-events: none;
-  transition: 0.5s;
-}
-
-.login-form_input input:focus {
-  border-bottom: 2px solid var(--green);
-}
-
-.login-form_input input:focus ~ .login-form_span {
-  color: #00b900;
-  transform: translateY(-34px);
-  font-size: 0.75em;
-}
-
-.login-form_submit {
-  font-weight: 800;
-  border-radius: 5px;
-  background-color: #dee5ec;
-  border-bottom: none;
-  color: #fff;
-  height: 60px;
-}
-
-.login-content {
-  display: flex;
-  justify-content: space-between;
-  color: #bec8d2;
-  font-size: 16px;
-}
-
-.login-content a {
-  color: inherit;
 }
